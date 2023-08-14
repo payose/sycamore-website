@@ -1,0 +1,36 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "8SD37N8MNZ.ng.sycamore.app"
+        ],
+        "components": [
+          {
+            "#": "no_universal_links",
+            "exclude": true,
+            "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
+         },
+          {
+            "/": "/loan-friends/*",
+            "comment": "Matches any URL with a path that starts with /loan-friends/."
+          },
+          {
+            "/": "/create-loan/*",
+            "comment": "Matches url that starts with /create-loan/"
+          },
+          {
+            "/": "/create-investment/*",
+            "comment": "Matches url that starts with /create-investment/"
+          }
+        ],
+        "paths": ["/mobile-app/*", "/loan-friends/*", "/create-loan/*", "/create-investment/*", "/pay-bills/*", "/view-loan/*"]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "8SD37N8MNZ.ng.sycamore.app"
+    ]
+  }
+}

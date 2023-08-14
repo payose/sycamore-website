@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "ng.sycamore.app2",
+      "sha256_cert_fingerprints":
+        ["44:10:F8:8D:A1:EE:09:1A:9F:29:86:D9:77:C5:8B:DD:12:A4:0B:FE:D5:9F:F1:5F:A0:83:8B:79:9F:10:C0:2D"]
+    }
+  }
+]
