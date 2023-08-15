@@ -5,7 +5,6 @@
     <particles />
     <div class="p-20 mb-36 pl-28 pr-0 pt-48 flex z-10 w-7/12 m-auto">
       <div class="m-auto w-3/4">
-        <memoji class="m-auto" />
         <div class="mt-5">
           <p class="font-medium text-5xl pt-6 text-center text-gray07">
             Join the waitlist
@@ -48,25 +47,12 @@
           </div>
         </div>
       </div>
-      <!-- <div class="w-2/5">
-        <img src="@/assets/waitlist.png" alt="Waitlist" class="w-full" />
-      </div> -->
     </div>
   </div>
 </template>
 
 <script>
-// import ColorPattern1 from "@/svg/ColorPattern1.vue";
-// import ColorPattern2 from "@/svg/ColorPattern2.vue";
-// import ColorPattern3 from "@/svg/ColorPattern3.vue";
-import Memoji from "@/svg/Memoji.vue";
 export default {
-  components: {
-    // ColorPattern1,
-    // ColorPattern2,
-    // ColorPattern3,
-    Memoji
-  },
   name: "Waitlist"
 };
 </script>

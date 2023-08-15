@@ -11,7 +11,7 @@
         <p class="font-bold md:text-xl pb-4">
           The page you’re looking for doesn’t exist.
         </p>
-        <p class="font-medium text-xxs md:text-sm">Don't stop, keep going!</p>
+        <p class="font-medium text-xs md:text-sm">Don't stop, keep going!</p>
       </div>
       <router-link
         to="/"

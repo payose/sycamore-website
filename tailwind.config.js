@@ -58,7 +58,7 @@ module.exports = {
 				accordionBg: "#fcfcfc",
 				grayFB: "#fbfbfb",
 				orange: "#F38861",
-				orangeFF: '#FFE4CC',
+				orangeFF: "#FFE4CC",
 				lightGray: "rgba(244, 245, 247, 0.07)",
 				lighterBlue: "#CCF0FE",
 				lighterGray: "rgba(244, 245, 247, 0)",

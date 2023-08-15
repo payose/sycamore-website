@@ -26,6 +26,7 @@ const BlogArticles = [
 		category: "Money",
 	},
 ];
+
 const PressClippings = [
 	{
 		id:1,

@@ -51,14 +51,14 @@
           :style="careReason.gradient"
         >
           <div
-            class="px-3 py-1 bg-gray-800 text-white rounded-lg bg-opacity-10 mb-2 md:mb-6 text-xxs md:text-xs"
+            class="px-3 py-1 bg-gray-800 text-white rounded-lg bg-opacity-10 mb-2 md:mb-6 text-xs md:text-s13"
             style="width: fit-content"
           >
             {{ careReason.sdg }}
           </div>
           <div>
             <p class="text-white font-semibold mb-4">{{ careReason.title }}</p>
-            <p class="text-white md:leading-5 text-xxs md:text-xs">
+            <p class="text-white md:leading-5 text-xs md:text-s13">
               {{ careReason.description }}
             </p>
           </div>
@@ -116,7 +116,7 @@
                 <p class="text-white text-sm md:text-lg font-medium">
                   {{ boardmember.name }}
                 </p>
-                <p class="text-white font-light text-xxs md:text-xs">
+                <p class="text-white font-light text-xs md:text-13">
                   {{ boardmember.role }}
                 </p>
                 <div class="pt-2">
