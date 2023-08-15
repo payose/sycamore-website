@@ -6,12 +6,12 @@
     >
       <div class="md:w-3/5 flex flex-col md:items-center z-10">
         <h1
-          class="text-3xl md:text-5xl font-semibold md:text-center text-gray07 md:leading-extra-loose"
+          class="text-2xl md:text-5xl font-semibold text-center text-gray07 md:leading-extra-loose"
         >
           What we've been up to.
         </h1>
         <h2
-          class="text-gray07 text-opacity-70 text-sm md:text-lg mt-4 md:mt-8 md:px-20 md:text-center"
+          class="text-gray07 text-opacity-70 text-sm md:text-lg mt-4 md:mt-8 md:px-20 text-center"
         >
           Check our collection of videos to stay up to date with happenings at
           Sycamore.
@@ -92,7 +92,7 @@
                 </div>
                 <a :href="item.link" class="flex">
                   <button
-                    class="px-3 md:px-4 py-3 md:py-3 text-xxs cursor-pointer md:text-xs bg-black100 text-white rounded-md border border-black100"
+                    class="px-3 md:px-4 py-3 md:py-3 text-xs cursor-pointer md:text-sm bg-black100 text-white rounded-md border border-black100"
                   >
                     Read more
                   </button>
@@ -128,9 +128,9 @@
                   />
                 </a>
               </div>
-              <p class="text-grayA9 text-xxs my-3">{{ item.date }}</p>
+              <p class="text-grayA9 text-xs my-3">{{ item.date }}</p>
               <a :href="item.link"
-                ><p class="text-xs cursor-pointer hover:underline">
+                ><p class="text-s13 cursor-pointer hover:underline">
                   {{ item.title }}
                 </p></a
               >
@@ -143,16 +143,14 @@
             </div>
           </div>
         </div>
-        <a href="https://blog.sycamore.ng/" class="flex justify-center">
+        <a href="https://blog.sycamore.ng/" target="_blank" class="flex justify-center">
           <button
-            class="px-3 md:px-4 py-3 md:py-3 text-xs md:text-sm bg-white text-gray07 rounded-md border border-black100"
+            class="px-3 md:px-4 py-3 md:py-3 text-xs md:text-sm bg-white text-gray07 rounded-md border border-black100 flex items-center"
           >
-            <div class="flex items-center">
-              <span class="mr-4">
-                <ArrowUpRightBlack />
-              </span>
-              See Our Blog
-            </div>
+            <span class="mr-4">
+            <ArrowUpRightBlack />
+            </span>
+            See Our Blog
           </button>
         </a>
       </div>

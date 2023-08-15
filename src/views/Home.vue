@@ -5,7 +5,6 @@
 		<div
 			class="pt-32 py-4 bg-opacity- bg-gradient-to-b from-lightPrimary to-lighterPrimary flex flex-col md:flex-row items-center px-6 md:px-40"
 		>
-			<!-- <div class="md:w-10/12 m-auto flex flex-col md:flex-row items-center"> -->
 			<div class="md:w-1/2">
 				<h1 class="text-3xl md:text-6xl text-gray07 font-semibold">
 					<vue-typer
@@ -180,7 +179,7 @@
 				>
 					By the Numbers
 				</p>
-				<p class="text-xs text-gray07 mt-1.5">
+				<p class="text-xs md:text-sm text-gray07 mt-1.5">
 					Take a quick glimpse at our performance metrics
 				</p>
 			</div>
@@ -241,15 +240,15 @@
 					<div
 						v-for="(testimonial, index) in testimonialsArray"
 						:key="index"
-						class="min-w-4/5 md:min-w-2/5 p-4 md:p-7 border-2 border-gray-300 rounded-lg mr-3 md:mr-6 hover:border-primary transition-all"
+						class="min-w-4/5 md:min-w-2/5 p-4 md:p-7 border border-gray-300 rounded-lg mr-3 md:mr-6 hover:border-primary transition-all"
 					>
 						<p class="text-gray26 text-sm md:text-base">
 							{{ testimonial.name }}
 						</p>
-						<p class="text-xs text-gray4F">
+						<p class="text-s13 text-gray4F">
 							{{ testimonial.city }}
 						</p>
-						<p class="text-xxs md:text-xs text-gray52 mt-6">
+						<p class="text-xs md:text-xs text-gray52 leading-5 mt-6">
 							{{ testimonial.text }}
 						</p>
 					</div>

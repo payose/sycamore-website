@@ -16,11 +16,11 @@
 				<div class="mb-6">
 					<h2 class="mb-2 font-semibold text-base">Quick Links</h2>
 					<p class="logo-message text-sm">
-						<ul>
-							<li class="mt-2"><router-link to="/about" class="link">About Us</router-link></li>
-							<li class="mt-2"><router-link to="/career" class="link">Careers</router-link></li>
-							<li class="mt-2"><router-link to="/privacy" class="link"> Privacy Policy</router-link></li>
-							<li class="mt-2"><router-link to="/terms" class="link">Terms and Conditions </router-link></li>
+						<ul class="[&>*]:py-1">
+							<li><router-link to="/about" class="link">About Us</router-link></li>
+							<li><router-link to="/career" class="link">Careers</router-link></li>
+							<li><router-link to="/privacy" class="link"> Privacy Policy</router-link></li>
+							<li><router-link to="/terms" class="link">Terms and Conditions </router-link></li>
 						</ul>
 					</p>
 				</div>
@@ -28,10 +28,9 @@
 				<div class="mb-6">
 					<h2 class="mb-2 font-semibold text-base">Resources</h2>
 					<p class="logo-message text-sm">
-						<ul>
-							<li class="mt-2"><router-link to="/faqs" class="link">FAQs</router-link></li>
-							<!-- <li class="mt-2"><router-link to="/about">Blog</router-link></li> -->
-							<li class="mt-2 link cursor-pointer" @click="talkToUs" >Talk to us</li>
+						<ul class="[&>*]:py-1">
+							<li><router-link to="/faqs" class="link">FAQs</router-link></li>
+							<li class="link cursor-pointer" @click="talkToUs">Talk to us</li>
 						</ul>
 					</p>
 				</div>
@@ -59,12 +58,12 @@
 					<h2 class="font-semibold text-base pt-5">Socials</h2>
 				
 					<div class="logo-message text-sm">
-						<div class="flex flex-row mt-4">
-							<span class="pr-2"><a href="https://www.instagram.com/sycamoreng/" target="_blank"><instagram/></a></span>
-							<span class="pr-2"><a href="https://www.linkedin.com/company/sycamore-finance/" target="_blank"><linkedinfooter/></a></span>
-							<span class="pr-2"><a href="https://twitter.com/SycamoreNG" target="_blank"><twitter/></a></span>
-							<span class="pr-2"><a href="https://www.youtube.com/channel/UCzsMXDElPmWUht3mfQOJBkg" target="_blank"><youtube/></a></span>
-							<span class="pr-2"><a href="https://www.facebook.com/SycamoreNG" target="_blank"><facebook/></a></span>
+						<div class="flex flex-row mt-4 [&>*]:pr-2">
+							<span><a href="https://www.instagram.com/sycamoreng/" target="_blank"><instagram/></a></span>
+							<span><a href="https://www.linkedin.com/company/sycamore-finance/" target="_blank"><linkedinfooter/></a></span>
+							<span><a href="https://twitter.com/SycamoreNG" target="_blank"><twitter/></a></span>
+							<span><a href="https://www.youtube.com/channel/UCzsMXDElPmWUht3mfQOJBkg" target="_blank"><youtube/></a></span>
+							<span><a href="https://www.facebook.com/SycamoreNG" target="_blank"><facebook/></a></span>
 						</div>
 					</div>
 				</div>
@@ -108,12 +107,13 @@ export default {
   }
 };
 </script>
-<style lang=scss scoped>
 
+<style lang=scss scoped>
 *{
   color: #fff
 }
 .link{
+    display: block;
     &:hover{
         color: #26C165 !important
     }

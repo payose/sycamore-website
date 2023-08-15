@@ -2,7 +2,7 @@
   <main class="main">
     <section class="py-14 md:px-20 green-bg h-auto md:h-screen">
       <div
-        class="w-10/12 m-auto flex flex-col justify-center items-center px-6"
+        class="w-10/12 m-auto flex flex-col justify-center items-center px-6 text-xs md:text-s13 text-white"
       >
         <div class="mb-10 m-auto">
           <router-link to="/" class="md:w-36">
@@ -11,25 +11,25 @@
         </div>
 
         <div>
-          <p class="text-white text-center text-sm pb-6">
+          <p class=" text-center text-sm pb-6">
             Referral Bonus Program Suspended.
           </p>
 
-          <div class="w-8/12 m-auto">
-            <p class="text-white text-center text-xs font-light pb-4">
+          <div class="w-8/12 text-center font-light [&>*]:pb-4 m-auto">
+            <p>
               The Sycamore referral program has been suspended effective May
               27th, 2022.
             </p>
-            <p class="text-white text-center text-xs font-light pb-4">
+            <p>
               Referral codes used after this date will not qualify for a
               referral bonus.
             </p>
-            <p class="text-white text-center text-xs font-light pb-4">
+            <p>
               You can enjoy the benefits Sycamore offers and carry out your
               everyday transactions seamlessly when you download the mobile App.
             </p>
 
-            <p class="text-white text-center text-xs font-light pb-4">
+            <p>
               This is to allow us to improve the referral program in order to
               serve you more optimally. We will communicate with you when it's
               open again.
@@ -38,9 +38,9 @@
         </div>
         <!-- <div class="flex flex-col md:flex-row">
           <div
-            class="md:flex-1 mb-14 text-center md:text-left text-white md:px-14"
+            class="md:flex-1 mb-14 text-center md:text-left md:px-14"
           >
-            <p class="pb-4 text-xxs md:text-xs leading-6">
+            <p class="pb-4leading-6">
               You have been referred to download the Sycamore App. <br />Please
               sign up using the following referral code
             </p>
@@ -59,7 +59,7 @@
                   >{{ referralId }}</span
                 >
                 <span
-                  class="flex text-white bg-primary1 p-3 rounded-md text-xs cursor-pointer"
+                  class="flex  bg-primary1 p-3 rounded-md text-xs cursor-pointer"
                   @click="copyText(referralId)"
                 >
                   <Copy class="mr-2" /> {{ buttonText }}
@@ -67,24 +67,24 @@
               </div>
             </div>
           </div>
-          <div class="md:flex-1 text-white text-xs md:ml-4">
-            <p class="text-xxs md:text-xs leading-6 pb-4">
+          <div class="md:flex-1  text-xs md:ml-4">
+            <p class=leading-6 pb-4">
               <span class="mr-2">1</span>
               Download the Sycamore App on the app store.
             </p>
-            <p class="text-xxs md:text-xs leading-6 pb-4">
+            <p class=leading-6 pb-4">
               <span class="mr-2">2</span>
               Enter the referral code in the referral code option.
             </p>
-            <p class="text-xxs md:text-xs leading-6 pb-4">
+            <p class=leading-6 pb-4">
               <span class="mr-2">3</span>
               Validate your BVN
             </p>
-            <p class="text-xxs md:text-xs leading-6 pb-4">
+            <p class=leading-6 pb-4">
               <span class="mr-2">4</span>
               Fund your wallet with at least ₦1,000 and keep for 3 days
             </p>
-            <p class="text-xxs md:text-xs leading-6 pb-4">
+            <p class=leading-6 pb-4">
               <span class="mr-2">5</span>
               Get ₦200 reward, referrer gets ₦800
             </p>
@@ -92,23 +92,23 @@
           </div>
         </div> -->
         <div class="mt-16">
-          <p class="text-white text-center text-xs">
+          <p class="text-center text-xs">
             Download the Sycamore app to sign up
           </p>
-          <div class="flex mt-4 ">
+          <div class="flex mt-4">
             <a
               target="_blank"
               href="https://apps.apple.com/ng/app/sycamore-ng/id1592757960"
               class="mr-3 md:w-36"
             >
-              <img src="../assets/appStore2.svg" class="md:w-40" alt="" />
+              <img src="../assets/appStore2.svg" class="md:w-40" alt="appstore download button" />
             </a>
             <a
               target="_blank"
               href="https://play.google.com/store/apps/details?id=ng.sycamore.app2"
               class="md:w-36"
             >
-              <img src="../assets/playStore2.svg" class="md:w-40" alt="" />
+              <img src="../assets/playStore2.svg" class="md:w-40" alt="playstore download button" />
             </a>
           </div>
         </div>
