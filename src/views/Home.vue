@@ -94,12 +94,12 @@
 					>
 						Download Sycamore
 					</p>
-					<p
+					<h3
 						class="text-grayF8 text-opacity-70 mt-2 text-xs font-light md:text-sm"
 					>
 						All in one app: Get loans, Lend friends, Pay Bills, and
 						Invest.
-					</p>
+					</h3>
 					<div
 						class="flex justify-center md:justify-start mt-4 md:mt-9"
 					>
@@ -132,6 +132,7 @@
 				</div>
 				<img
 					src="@/assets/mockup-2.svg"
+                    alt="sycamore app interface"
 					class="mock-up md:bottom-1 md:right-0"
 				/>
 			</div>
@@ -211,11 +212,12 @@
 				<div class="flex items-center justify-between m-auto min-w-max">
 					<div
 						class="bg-white h-20 flex mx-4 items-center rounded-lg shadow-xl"
-						v-for="brand in brands"
-						:key="brand.id"
+						v-for="(brand, index) in brands"
+						:key="index"
 					>
 						<img
-							:src="require(`@/assets/brands/${brand.img}.png`)"
+							:src="require(`@/assets/brands/${brand.name}.png`)"
+                            :alt="brand.name"
 							class="md:w-48 px-8"
 						/>
 					</div>
@@ -451,28 +453,23 @@ export default {
 		return {
 			brands: [
 				{
-					id: 1,
-					img: "mono",
+					name: "mono",
 					link: "",
 				},
 				{
-					id: 2,
-					img: "paystack",
+					name: "paystack",
 					link: "",
 				},
 				{
-					id: 3,
-					img: "sendgrid",
+					name: "sendgrid",
 					link: "",
 				},
 				{
-					id: 4,
-					img: "remitta",
+					name: "remitta",
 					link: "",
 				},
 				{
-					id: 5,
-					img: "mbs",
+					name: "mbs",
 					link: "",
 				},
 			],

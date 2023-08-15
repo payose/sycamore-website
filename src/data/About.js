@@ -7,14 +7,14 @@ const TeamManagers = [
         id: 1,
         name: "Babatunde Akin-Moses",
         designation: "Chief Executive Officer",
-        img: "team-member-1.png",
+        img: "team-member-1.webp",
         linked: "https://www.linkedin.com/in/babatundeakinmoses/"
     },
     {
         id: 2,
         name: "Onyinye Okonji",
         designation: "Chief Marketing Officer",
-        img: "team-member-2.png",
+        img: "team-member-2.webp",
         linked: "https://www.linkedin.com/in/onyinyeokonji/"
     },
     {
