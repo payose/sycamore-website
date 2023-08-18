@@ -130,7 +130,7 @@
 					</div>
 				</div>
 				<img
-					src="@/assets/mockup-2.svg"
+					src="@/assets/sycamore-app-screen.png"
                     alt="sycamore app interface"
 					class="mock-up md:bottom-1 md:right-0"
 				/>

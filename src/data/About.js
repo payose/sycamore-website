@@ -7,70 +7,70 @@ const TeamManagers = [
         id: 1,
         name: "Babatunde Akin-Moses",
         designation: "Chief Executive Officer",
-        img: "team-member-1.webp",
+        img: "tunde.webp",
         linked: "https://www.linkedin.com/in/babatundeakinmoses/"
     },
     {
         id: 2,
         name: "Onyinye Okonji",
         designation: "Chief Marketing Officer",
-        img: "team-member-2.webp",
+        img: "onyinye-okonji.jpg",
         linked: "https://www.linkedin.com/in/onyinyeokonji/"
     },
     {
         id: 3,
         name: "Mayowa Adeosun",
         designation: "Chief Operating Officer",
-        img: "team-member-3.png",
+        img: "mayowa-adeosun.jpg",
         linked: "https://www.linkedin.com/in/mayowa-adeosun-mba-b4992754"
     },
     {
         id: 7,
         name: "Daniel Anyaegbu",
         designation: "Chief Technology Officer",
-        img: "team-member-7.png",
+        img: "daniel-anyaegbu.jpg",
         linked: "https://www.linkedin.com/in/daniel-anyaegbu-7a1405163/"
     },
     {
         id: 9,
         name: "Mercy Dada",
         designation: "Head of Risk",
-        img: "team-member-9.png",
+        img: "mercy-dada.jpg",
         linked: "https://www.linkedin.com/in/mercy-itua-dada-016428127/"
     },
     {
         id: 8,
         name: "Kingsley Makinde",
         designation: "Head of Product",
-        img: "team-member-8.png",
+        img: "kingsley-makinde.jpg",
         linked: "https://www.linkedin.com/in/kingsley-makinde/"
     },
     {
         id: 10,
         name: "Mojisola Fagbohunlu",
         designation: "Head of Marketing",
-        img: "team-member-10.png",
+        img: "mojisola-fagbohunlu.webp",
         linked: "https://www.linkedin.com/in/mojisolaoguneko"
     },
     {
         id: 6,
         name: "Adebayo Adenaike",
         designation: "Head of Investment Affairs",
-        img: "team-member-6.png",
+        img: "adebayo-denaike.jpg",
         linked: "https://www.linkedin.com/in/bayo-adenaike-a571b220b/"
     },
     {
         id: 5,
         name: "Francis Agim",
         designation: "Head of Sales",
-        img: "team-member-5.jpg",
+        img: "francis-agim.webp",
         linked: "https://www.linkedin.com/in/francis-agim-mba-micrm-mnim-mcilrm-91679592/"
     },
     {
         id: 4,
         name: "Segun Afuwape",
         designation: "Head of Collections",
-        img: "team-member-4.png",
+        img: "segun-afuwape.jpg",
         linked: "https://www.linkedin.com/in/olusegun-afuwape-00065198"
     }
 ]
