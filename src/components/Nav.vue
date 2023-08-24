@@ -278,33 +278,4 @@ export default {
   /* border-radius: 25px; */
   /* margin: 2rem 0rem; */
 }
-
-.contact {
-  background-color: #f9faf9;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-.message-content {
-  padding: 20px;
-}
-
-.message-content li {
-  display: flex;
-  margin-bottom: 10px;
-}
-
-.message-content span {
-  margin-right: 1.7rem;
-}
-
-.accordion-caret {
-  background-image: linear-gradient(to top right, transparent 50%, #727272 50%);
-  width: 0.5rem;
-  height: 0.5rem;
-  transform: rotate(-45deg);
-}
 </style>
