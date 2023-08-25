@@ -1,9 +1,7 @@
-
-
 const BlogArticles = [
 	{
 		date: "March 17, 2023",
-		image: "sycamoreMobile.svg",
+		image: "sycamoreMobile.jpg",
 		title: "Sycamore 2.0 – A different lending experience",
 		link: "https://blog.sycamore.ng/not-another-loan-app/",
 		color: "greenE8",
@@ -12,7 +10,7 @@ const BlogArticles = [
 	{
 		date: "October 21, 2022",
 		title: "Sycamore Obtains FCCPC Digital Lending Licence",
-		image: 'sycamoreLicense.svg',
+		image: 'sycamoreLicense.jpg',
 		link: 'https://blog.sycamore.ng/sycamore-obtains-fccpc-digital-lending-licence/',
 		color: "lighterBlue",
 		category: "Licencing",
@@ -20,7 +18,7 @@ const BlogArticles = [
 	{
 		date: "January 27, 2023",
 		title: "Acheiving Financial Independence",
-		image: 'financialIndependence.svg',
+		image: 'financialIndependence.jpg',
 		link: 'https://blog.sycamore.ng/achieving-financial-independence/',
 		color: "orangeFF",
 		category: "Money",

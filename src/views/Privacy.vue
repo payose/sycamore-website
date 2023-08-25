@@ -8,9 +8,7 @@
 				class="md:w-4/6 m-auto my-20 md:my-40 text-justify text-xs md:text-s13 text-gray07"
 				style="line-height: 1.5rem"
 			>
-				<h1 class="md:text-center font-semibold text-2xl md:text-4xl">
-				Privacy Policy
-				</h1>
+				<h1 class="md:text-center font-semibold text-2xl md:text-4xl">Privacy Policy</h1>
 
 				<div>
 				<div

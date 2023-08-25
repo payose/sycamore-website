@@ -7,7 +7,7 @@ const TeamManagers = [
         id: 1,
         name: "Babatunde Akin-Moses",
         designation: "Chief Executive Officer",
-        img: "tunde.webp",
+        img: "tunde.jpg",
         linked: "https://www.linkedin.com/in/babatundeakinmoses/"
     },
     {
@@ -76,20 +76,20 @@ const TeamManagers = [
 ]
 const BoardMembers = [
     {
-        id: 1,
         name: "Bade Aluko",
+        img: "bade-aluko.jpg",
         role: "Chairman",
         linked: "https://www.linkedin.com/in/bade-aluko-90543b7/"
     },
     {
-        id: 2,
         name: "Adeola Azeez",
+        img: "adeola-azeez.jpg",
         role: "Board Member",
         linked: "https://www.linkedin.com/in/adeola-azeez-6a320797/"
     },
     {
-        id: 3,
         name: "Oliver Nnona",
+        img: "oliver-nnona.jpg",
         role: "Board Member",
         linked: "https://www.linkedin.com/in/olivernnona/"
     }

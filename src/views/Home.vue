@@ -278,7 +278,7 @@
 				</div>
 				<div class="w-full md:w-1/2 md:h-full">
 					<img
-						src="@/assets/importantnotice.png"
+						src="@/assets/importantnotice.jpg"
 						class="w-full h-full rounded-t-[20px] md:rounded-tr-[0px] md:rounded-l-[20px]"
 					/>
 				</div>
