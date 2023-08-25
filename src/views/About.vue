@@ -104,9 +104,7 @@
             class="relative mx-3 mt-5"
           >
             <img
-              :src="
-                require(`@/assets/board-members/board-member-${boardmember.id}.png`)
-              "
+              :src="(`../assets/board-members/board-member-${boardmember.img}`)"
               alt=""
               class="transition ease-in-out duration-700 board-img"
             />
