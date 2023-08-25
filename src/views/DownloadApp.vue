@@ -105,18 +105,20 @@
 		<section class="px-4 py-10 md:py-28">
 			<div class="flex flex-col items-center md:w-9/12 m-auto">
 				<div class="flex gap-x-4 md:gap-x-28">
-					<button v-for="(tab, index) in tabs" :key="index" @click="toggleTab(index + 1, tab.toLowerCase())"
-						:class="`${activeTab == index + 1
+					<button v-for="(tab, index) in tabs" 
+                        :key="index"
+                        @click="activeTab = tab"
+						:class="`${activeTab.name == tab.name
 								? 'text-gray07 font-semibold border-b-2 border-primary'
 								: ''
 							}`
 							" class="text-gray-500 text-sm md:text-base py-4 px-1 md:px-6 block outline-none font-medium transition-all cursor-pointer">
-						{{ tab }}
+						{{ tab.name }}
 					</button>
 				</div>
 
 				<div class="md:w-9/12 m-auto">
-					<div v-for="(faq, index) in faqs" :key="index">
+					<div v-for="(faq, index) in activeTab.faqs" :key="index">
 						<accordion :faq="faq" />
 					</div>
 				</div>
@@ -126,7 +128,7 @@
 </template>
 
 <script>
-import { AllFaqs } from "@/data/Faqs.js";
+import { LoanfriendsFaq, SycamoreFaqs, SupportFaqs } from "@/data/Faqs.js";
 import Accordion from "../components/Accordion.vue";
 import Appstore from "@/svg/Appstore.vue";
 import Playstore from "@/svg/Playstore.vue";
@@ -160,36 +162,17 @@ export default {
 
 	data() {
 		return {
-			selectedTab: 1,
-			activeTab: 1,
-			tabName: "loan friends",
-			faqs: [],
-			tabs: ["Loan Friends", "Sycamore 2.0", "Support"],
-			allFaqs: AllFaqs,
+			activeTab: '',
+			tabs: [
+                {name: "Loan Friends", faqs: LoanfriendsFaq},
+                {name: "Sycamore 2.0", faqs: SycamoreFaqs},
+                {name: "Support", faqs: SupportFaqs}
+            ]
 		};
 	},
 
-	computed: {
-		accordionClasses: function () {
-			return {
-				"is-closed": false
-			};
-		}
-	},
-
-	methods: {
-		toggleTab(tab, name) {
-			this.activeTab = tab;
-			this.faqs = this.allFaqs.filter(faq => faq.category == name);
-			this.tabName = name;
-		},
-		talkToUs() {
-			this.$intercom.show();
-		}
-	},
-
 	mounted() {
-		this.faqs = this.allFaqs.filter(faq => faq.category == "loan friends");
+        this.activeTab = this.tabs[0]
 	}
 };
 </script>

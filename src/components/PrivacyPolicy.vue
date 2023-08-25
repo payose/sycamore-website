@@ -9,7 +9,6 @@
           <div class="card-content">
             <div class="content">
               <h4><strong>Privacy Notice</strong></h4>
-
               <p>
                 Sycamore Integrated Solutions Limited (also known as
                 <b>Sycamore/Sycamore.NG</b>) will be the data controller for the

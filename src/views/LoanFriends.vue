@@ -66,7 +66,7 @@
 
         <div class="order-first md:order-none text-center">
           <div>
-            <img src="../assets/loan-friends-mockup.svg" class="" alt="" />
+            <img src="../assets/loan-friends-mockup.jpg" class="" alt="" />
           </div>
         </div>
 

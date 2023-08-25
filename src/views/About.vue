@@ -271,18 +271,6 @@ export default {
   display: inline;
 }
 
-.about-hero {
-  background-image: url("../assets/humans-of-sycamore.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 400px;
-  border-radius: 10px;
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
 @media only screen and (min-width: 768px) {
   .linkin {
     height: 0;
