@@ -99,14 +99,14 @@
       <div class="container">
         <div class="flex board">
           <div
-            v-for="boardmember in boardmembers"
-            :key="boardmember.id"
-            class="relative mx-3 mt-5"
+            v-for="(boardmember, index) in boardmembers"
+            :key="index"
+            class="relative mx-4 mt-5"
           >
             <img
-              :src="(`../assets/board-members/board-member-${boardmember.img}`)"
-              alt=""
-              class="transition ease-in-out duration-700 board-img"
+              :src="require(`@/assets/board-members/${boardmember.img}`)"
+              alt="board member"
+              class="board-images transition ease-in-out duration-700 board-img"
             />
 
             <div class="hide overlay-bg absolute w-full bottom-0">
@@ -235,6 +235,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .managers-img {
   height: 15rem;
   width: 12rem;
@@ -262,6 +263,12 @@ export default {
 
 .linkin {
   height: 50%;
+}
+
+.board-img{
+    height: 26rem;
+    width: 20rem;
+    object-fit: fill;
 }
 
 .board-img:hover + .hide,
