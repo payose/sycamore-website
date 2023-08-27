@@ -4,19 +4,15 @@
     <section
       class="bg-opacity-5 bg-gradient-to-b from-lightSecondary to-lighterSecondary flex justify-center items-center px-6 md:px-20 pt-20 pb-10 md:pt-48"
     >
-      <div class="md:w-3/5 flex flex-col md:items-center z-10">
-        <h1
-          class="text-2xl md:text-5xl font-semibold text-center text-gray07 md:leading-extra-loose"
-        >
-          What we've been up to.
-        </h1>
-        <h2
-          class="text-gray07 text-opacity-70 text-sm md:text-lg mt-4 md:mt-8 md:px-20 text-center"
-        >
-          Check our collection of videos to stay up to date with happenings at
-          Sycamore.
-        </h2>
-      </div>
+		<div class="md:w-3/5 flex flex-col md:items-center z-10">
+			<h1 class="text-2xl md:text-5xl font-semibold text-center text-gray07 md:leading-extra-loose">
+			What we've been up to.
+			</h1>
+			<h2 class="text-gray07 text-opacity-70 text-sm md:text-lg mt-4 md:mt-8 md:px-20 text-center">
+			Check our collection of videos to stay up to date with happenings at
+			Sycamore.
+			</h2>
+		</div>
     </section>
     <section class="px-6 mb-24 mt-0">
       <div class="rounded flex flex-col items-center mb-20 md:px-40">
@@ -54,20 +50,24 @@
         Lending in Nigeria: Can Tech Make Borrowing from Family and Friends
         Sustainable?
       </p>
-      <c-button
-        size="lg"
-        class="text-white mt-6 md:mt-0"
+      <button
+        type="button"
         @click="DownloadReport"
-        ><component :is="DownloadIconVue" class="mr-3" /> Download
-        Report</c-button
+        class="bg-primary text-white flex items-center justify-center py-5 px-11 transition ease-in-out duration-500 rounded-[10px]"
       >
+        <component :is="DownloadIconVue" class="mr-3" /> Download Report
+      </button>
     </section>
+
     <section class="px-6 py-[44px] bg-[#F6F6F7] relative">
       <div class="md:w-9/12 m-auto">
         <p class="md:text-4xl text-2xl text-gray07 font-semibold">
           Press Clippings 📰
         </p>
-        <div class="flex flex-col overflow-x-scroll scroll-smooth scrollbar" id="container">
+        <div
+          class="flex flex-col overflow-x-scroll scroll-smooth scrollbar"
+          id="container"
+        >
           <div class="flex space-x-3 mt-10 mb-7 m-auto">
             <div
               class="w-[307px] h-[360px] flex flex-grow"
@@ -75,16 +75,18 @@
               :key="index"
               :id="`card${index}`"
             >
-              <div class="rounded-xl bg-white px-3 pt-3 pb-6 flex flex-col justify-between">
+              <div
+                class="rounded-xl bg-white px-3 pt-3 pb-6 flex flex-col justify-between"
+              >
                 <div class="">
-                <div
-                  class="bg-[#F9FAFA] h-[164px] flex justify-center items-center rounded-[6px]"
-                >
-                  <img
-                    :src="require(`@/assets/${item.img}`)"
-                    :alt="item.title"
-                  />
-                </div>
+                  <div
+                    class="bg-[#F9FAFA] h-[164px] flex justify-center items-center rounded-[6px]"
+                  >
+                    <img
+                      :src="require(`@/assets/${item.img}`)"
+                      :alt="item.title"
+                    />
+                  </div>
                   <div class="text-xs mt-2.5">
                     <p class="uppercase text-grayA9A">{{ item.title }}</p>
                     <p class="mt-2 leading-5 pr-5">{{ item.caption }}</p>
@@ -103,13 +105,14 @@
         </div>
 
         <button
-        @click="slideLeft()"
+          @click="slideLeft()"
           class="bg-primary cursor-pointer animate-bounce rounded-full w-9 h-9 absolute px-3.5 py-2.5 right-0 md:right-[94px] lg:right-30 xl:right-[180px] top-1/2 p-4 2xl:hidden"
         >
           <ArrowSide />
         </button>
       </div>
     </section>
+
     <section class="px-6 py-36">
       <div class="md:w-9/12 m-auto flex flex-col">
         <p class="text-2xl md:text-4xl text-gray07 font-semibold">
@@ -143,18 +146,23 @@
             </div>
           </div>
         </div>
-        <a href="https://blog.sycamore.ng/" target="_blank" class="flex justify-center">
+        <a
+          href="https://blog.sycamore.ng/"
+          target="_blank"
+          class="flex justify-center"
+        >
           <button
             class="px-3 md:px-4 py-3 md:py-3 text-xs md:text-sm bg-white text-gray07 rounded-md border border-black100 flex items-center"
           >
             <span class="mr-4">
-            <ArrowUpRightBlack />
+              <ArrowUpRightBlack />
             </span>
             See Our Blog
           </button>
         </a>
       </div>
     </section>
+	
     <download-app />
     <Modal ref="dialog" size="md">
       <download-report />
@@ -166,12 +174,15 @@
           <p class="text-2xl leading-[64px] font-semibold">Report Sent</p>
           <p class="text-sm font-normal">Check your email for the report</p>
         </div>
-        <c-button
-          size="lg"
-          class="text-white w-full text-center mt-10 mb-2"
-          @click="hideModal"
-          >Okay
-        </c-button>
+        <div class="mt-10 mb-2">
+          <button
+            type="button"
+            @click="hideModal"
+            class="bg-primary text-white py-5 px-11 transition ease-in-out duration-500 rounded-[10px] w-full"
+          >
+            Okay
+          </button>
+        </div>
       </div>
     </Modal>
   </main>
@@ -180,7 +191,6 @@
 <script>
 import { fetchVideos } from "@/api/youtube";
 import DownloadApp from "@/components/DownloadApp.vue";
-import CButton from "@/components/Button.vue";
 import DownloadIconVue from "@/svg/DownloadIcon.vue";
 import Modal from "@/components/Dialog/Dialog";
 import DownloadReport from "@/components/DownloadReport.vue";
@@ -222,7 +232,6 @@ export default {
   },
   components: {
     DownloadApp,
-    CButton,
     Modal,
     DownloadReport,
     ArrowSide,
@@ -260,7 +269,7 @@ export default {
     hideModal() {
       this.$refs.successDialog.$el?.close();
       this.$router.push("/media");
-    }
+    },
   },
 
   mounted() {
@@ -269,46 +278,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.blue-bg {
-  background-image: url("../assets/blue-bg.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.yellow-bg {
-  background-image: url("../assets/yellow-bg.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.iframe-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding-top: 47.3%; /* 16:9 Aspect Ratio */
-
-  .responsive-iframe {
-    position: absolute;
-    // text-align: center;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-  
-  .card:hover {
-    transform: scale(1);
-    filter: blur(0px);
-    opacity: 1;
-    cursor: pointer;
-    transform: scale(0.9);
-  }
-}
-</style>

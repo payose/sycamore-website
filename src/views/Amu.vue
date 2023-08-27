@@ -110,34 +110,33 @@ export default {
   },
   methods: {
     validate() {
-      this.error.name = "";
-      this.error.phone = "";
-      this.error.email = "";
-      this.error.all = "";
-      if (
-        this.phone.length < 1 ||
-        this.email.length < 1 ||
-        this.name.length < 1
-      ) {
-        this.error.all = "Please complete all fields";
-      } else {
-        const format = /[a-zA-Z]+\s+[a-zA-Z]+/g;
-        if (!format.test(this.name)) {
-          this.error.name = "Provide your first name and surname";
-        }
+        this.error.name = "";
+        this.error.phone = "";
+        this.error.email = "";
+        this.error.all = "";
+        if (
+            this.phone.length < 1 ||
+            this.email.length < 1 ||
+            this.name.length < 1
+        ) {
+            this.error.all = "Please complete all fields";
 
-        const mailformat = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-        if (!mailformat.test(this.email)) {
-          this.error.email = "Enter a valid email";
-        }
-
-        if (this.phone.length !== 11) {
-          this.error.phone = "Enter a valid phone number";
         } else {
-          this.register();
+			const format = /^[A-Za-z]+$/;
+            const mailformat = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            
+            if (!format.test(this.name)) {
+                this.error.name = "Provide your first name and surname";
+            } else if (!mailformat.test(this.email)) {
+                this.error.email = "Enter a valid email";
+                
+            } else if (this.phone.length !== 11) {
+                this.error.phone = "Enter a valid phone number";
+
+            } else {
+                this.register();
+            }
         }
-      }
     },
 
     async register() {
