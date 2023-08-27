@@ -16,7 +16,7 @@ input[type="number"],
 textarea {
     width: 100%;
     padding: 12px;
-    border-radius: 4px;
+    border-radius: 10px;
     box-sizing: border-box;
     resize: vertical;
     outline: none;
@@ -30,3 +30,6 @@ textarea {
     scrollbar-width: none;
 }
 
+.default-shadow{
+    box-shadow: 0px 15px 50px 1px rgba(0, 0, 0, 0.1);
+}

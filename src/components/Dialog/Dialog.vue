@@ -1,47 +1,44 @@
 <template>
-     <dialog
-        v-bind="$attrs"
-        :class="[     {
-            'w-[475px]': size === 'sm',
-            'w-[516px]': size === 'md'
-          },
-          'dialog m-auto rounded-[20px]',
-          modalClass]"
-      >
-        <div :class="['py-12 px-5 md:px-[60px]', bodyClass]"><slot></slot></div>
-      </dialog>
+  <dialog
+    v-bind="$attrs"
+    :class="[
+      {
+        'w-[475px]': size === 'sm',
+        'w-[516px]': size === 'md',
+      },
+      'dialog m-auto rounded-[20px]',
+      modalClass,
+    ]"
+  >
+    <div :class="['py-12 px-5 md:px-[60px]', bodyClass]"><slot></slot></div>
+  </dialog>
 </template>
-<script>
 
+<script>
 export default {
   name: "Dialog",
-  props : {
+  props: {
     onClose: {
-      type: Function
+      type: Function,
     },
     modalClass: {
-      type:String
+      type: String,
     },
     bodyClass: {
-      type: String
+      type: String,
     },
     size: {
       type: String,
-      default: "sm"
-    }
-  },
-  data() {
-    return {
-
-    }
+      default: "sm",
+    },
   },
   mounted() {
-    const dialog = this.$parent.$refs.dialog.$el
-    dialog.addEventListener('click', this.closeModal);
+    const dialog = this.$parent.$refs.dialog.$el;
+    dialog.addEventListener("click", this.closeModal);
   },
   beforeDestroy() {
-    const dialog = this.$parent.$refs.dialog.$el
-    dialog.removeEventListener('click', this.closeModal);
+    const dialog = this.$parent.$refs.dialog.$el;
+    dialog.removeEventListener("click", this.closeModal);
   },
   methods: {
     closeModal(event) {
@@ -57,12 +54,11 @@ export default {
         dialog?.close?.();
         this.onClose?.();
       }
-    }
-
-  }
-}
+    },
+  },
+};
 </script>
-<style src="./dialog.css" scoped>
 
+<style src="./dialog.css" scoped>
 </style>
 

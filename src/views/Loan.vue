@@ -19,7 +19,7 @@
           Loan
         </h1>
         <h2
-          class="text-gray07 text-opacity-70 mt-4 md:mt-8 text-sm md:text-base md:text-center"
+          class="text-gray07 text-opacity-70 mt-4 md:mt-8 text-sm md:text-base md:text-center leading-8"
         >
           Gain access to quick loans to cater for your financial needs. Our no
           collateral loans are available to both salaried employees and
@@ -47,7 +47,7 @@
           <widget header="Get a Loan" />
         </div>
       </div>
-      <div class="md:mx-52 mb-12 mt-8 text-sm opacity-70">
+      <div class="md:mx-52 mb-12 mt-12 text-sm opacity-70">
         <p class="md:text-center">
           The amount on the loan calculator is an initial estimate only. We’ll
           make you a loan offer based on the information you share with us in
@@ -187,14 +187,7 @@ export default {
   );
   position: relative;
 }
-.hello {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-form {
-  padding: 10px 100px;
-}
+
 h1 {
   line-height: 72px;
 }
@@ -204,59 +197,5 @@ span {
   top: 62px;
   z-index: 2;
 }
-label {
-  line-height: 150%;
-  color: #758c96;
-}
-input {
-  display: block;
-  width: 500px;
-  height: 72px;
-  border: #f4f5f7;
-  background-color: #f4f5f7;
-  margin-top: 20px;
-  outline: none;
-  color: #020202;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  line-height: 150%;
-  font-style: normal;
-  font-size: 24px;
-  padding-left: 3rem !important;
-}
-.month {
-  grid-template-columns: 3fr 1fr;
-}
 
-.repayment-period {
-  width: 60%;
-}
-
-.repayment-value {
-  line-height: 150%;
-  color: #5b7681;
-}
-.repayment-label {
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 150%;
-  color: #758c96;
-}
-/* button {
-  width: 218px;
-  height: 69px;
-  border-radius: 6px;
-  margin-top: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-} */
-
-.error {
-  font-family: "Poppins", sans-serif;
-  color: red;
-  font-size: 12px;
-}
 </style>

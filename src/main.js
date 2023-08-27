@@ -5,14 +5,10 @@ import router from "./router";
 import particles from "@/components/Particles.vue";
 import "./assets/css/tailwind.css";
 import "animate.css";
-import "./utils/veeValiadate";
 
-import { ValidationProvider, ValidationObserver } from "vee-validate";
 
 Vue.config.productionTip = false;
 Vue.component("particles", particles);
-Vue.component("ValidationProvider", ValidationProvider);
-Vue.component("ValidationObserver", ValidationObserver);
 
 new Vue({
 	router,
