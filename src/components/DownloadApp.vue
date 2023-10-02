@@ -49,7 +49,11 @@
         </div>
 
         <div class="w-3/4 md:w-4/12 m-auto mt-10 md:mt-20">
-          <img src="@/assets/invest-phone.png" class="" alt="" />
+            <LazyImage 
+                src = "@/assets/invest-phone.png"
+                classNames = ""
+            />
+          <!-- <img src="@/assets/invest-phone.png" class="" alt="" /> -->
         </div>
       </div>
     </section>
@@ -59,13 +63,15 @@
 <script>
 import Appstore from "@/svg/Appstore.vue";
 import Playstore from "@/svg/Playstore.vue";
+import LazyImage from "@/components/LazyImage.vue";
 
 export default {
   name: "DownloadApp",
 
   components: {
     Appstore,
-    Playstore
+    Playstore,
+    LazyImage
   }
 };
 </script>

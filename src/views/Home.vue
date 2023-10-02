@@ -133,6 +133,7 @@
 					src="@/assets/sycamore-app-screen.png"
                     alt="sycamore app interface"
 					class="mock-up md:bottom-1 md:right-0"
+                    loading="lazy"
 				/>
 			</div>
 		</div>
@@ -280,6 +281,7 @@
 					<img
 						src="@/assets/importantnotice.jpg"
 						class="w-full h-full rounded-t-[20px] md:rounded-tr-[0px] md:rounded-l-[20px]"
+                        loading="lazy"
 					/>
 				</div>
 				<div
@@ -335,6 +337,7 @@ import ChartPieSliceVue from "@/svg/ChartPieSlice.vue";
 import ShieldChevronVue from "@/svg/ShieldChevron.vue";
 import Previous from "@/svg/Previous.vue";
 import Next from "@/svg/Next.vue";
+import LazyImage from "@/components/LazyImage.vue";
 import StatCard from "@/components/StatisticsCard.vue";
 
 const statistics = [
@@ -447,6 +450,7 @@ export default {
 		Next,
 		StatCard,
 		Playstore,
+        LazyImage
 	},
 	data() {
 		return {

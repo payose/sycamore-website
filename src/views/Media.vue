@@ -23,6 +23,7 @@
           class="rounded-2xl"
           :src="`https://www.youtube.com/embed/${topVideo.id.videoId}`"
           frameborder="0"
+            loading="lazy"
           allowfullscreen
         />
       </div>
@@ -37,6 +38,8 @@
             :src="`https://www.youtube.com/embed/${item.id.videoId}`"
             frameborder="0"
             allowfullscreen
+            loading="lazy"
+
           />
         </div>
       </div>
