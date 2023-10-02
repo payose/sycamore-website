@@ -106,6 +106,7 @@
             <img
               :src="require(`@/assets/board-members/${boardmember.img}`)"
               alt="board member"
+              loading="lazy"
               class="board-images transition ease-in-out duration-700 board-img"
             />
 
@@ -148,6 +149,7 @@
                 <img
                   :src="require(`@/assets/managers/${teamMember.img}`)"
                   alt=""
+                  loading="lazy"
                   class="managers-img linkin-img"
                 />
 

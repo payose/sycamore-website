@@ -132,6 +132,7 @@
 				<img
 					src="@/assets/sycamore-app-screen.png"
                     alt="sycamore app interface"
+                    loading="lazy"
 					class="mock-up md:bottom-1 md:right-0"
 				/>
 			</div>
@@ -217,6 +218,7 @@
 						<img
 							:src="require(`@/assets/brands/${brand.name}.png`)"
                             :alt="brand.name"
+                            loading="lazy"
 							class="md:w-48 px-8"
 						/>
 					</div>
@@ -279,6 +281,7 @@
 				<div class="w-full md:w-1/2 md:h-full">
 					<img
 						src="@/assets/importantnotice.jpg"
+                        loading="lazy"
 						class="w-full h-full rounded-t-[20px] md:rounded-tr-[0px] md:rounded-l-[20px]"
 					/>
 				</div>
